@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Lopper</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">Lopper</div>
+    <nav class="header__nav nav">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="team.html" class="nav__link">Work</a>
+      <a href="about.html" class="nav__link">About</a>
+    </nav>
+    <div class="header__contacts">
+      <div class="header__phone">
+        <!-- Иконка телефона -->
+        <svg width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8" y="4" width="48" height="56" rx="6" stroke="black" stroke-width="4" fill="none"/>
+          <circle cx="32" cy="54" r="3" fill="black"/>
+        </svg>
+        (01) 666 - 693 - 456
+    </div>
+    <div class="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28">
+        <rect y="6" width="28" height="2" rx="1" fill="#222"/>
+        <rect y="13" width="28" height="2" rx="1" fill="#222"/>
+        <rect y="20" width="28" height="2" rx="1" fill="#222"/>
+      </svg>
+    </div>
+  </header>
+  <main class="header__menu menu">
+    <section class="about">
+      <h1 class="about__title">Gallery</h1>
+      <p class="about__subtitle">WE BUILD GREAT BUSINESS</p>
+    </section>
+  </main>
+  <section class="gallery">
+    <div class="gallery__row">
+      <div class="gallery__item purple">
+        <img src="assets/images/2.png" alt="Photo 2">
+        <div class="gallery__caption">
+          <span class="gallery__title">PHOTO NAME</span>
+          <span class="gallery__desc">Etiam dignissim diam quis enim lobortis.</span>
+        </div>
+      </div>
+      <div class="gallery__item green">
+        <img src="assets/images/1.png" alt="Photo 1">
+        <div class="gallery__caption">
+          <span class="gallery__title">PHOTO NAME</span>
+          <span class="gallery__desc">Etiam dignissim diam quis enim lobortis.</span>
+        </div>
+      </div>
+    </div>
+    <div class="gallery__medium">
+      <img src="assets/images/5.png" alt="Photo 5">
+      <div class="gallery__caption medium">
+        <span class="gallery__title medium">PHOTO NAME</span>
+        <span class="gallery__desc medium">Etiam dignissim diam quis enim lobortis.</span>
+      </div>
+    </div>
+    <div class="gallery__row bottom">
+      <div class="gallery__member bottom-1">
+        <img src="assets/images/3.png" alt="Photo 4">
+        <div class="gallery__caption">
+          <span class="gallery__title">PHOTO NAME</span>
+          <span class="gallery__desc">Etiam dignissim diam quis enim lobortis.</span>
+        </div>
+      </div>
+      <div class="gallery__item bottom-2">
+        <img src="assets/images/4.png" alt="Photo 4">
+        <div class="gallery__caption-4">
+          <span class="gallery__title-4">PHOTO NAME</span>
+          <span class="gallery__desc-4">Etiam dignissim diam quis enim lobortis.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonials">
+    <div class="testimonials__main">
+      <!-- Маленькие кружки -->
+      <img class="testimonials__bubble testimonials__bubble--1" src="assets/images/img_ellipse_105x105.png" alt="">
+      <img class="testimonials__bubble testimonials__bubble--2" src="assets/images/img_ellipse_64x64.png" alt="">
+      <img class="testimonials__bubble testimonials__bubble--3" src="assets/images/img_ellipse_81x81.png" alt="">
+      <img class="testimonials__bubble testimonials__bubble--4" src="assets/images/img_ellipse_92x92.png" alt="">
+      <img class="testimonials__bubble testimonials__bubble--5" src="assets/images/img_ellipse_73x73.png" alt="">
+      <img class="testimonials__bubble testimonials__bubble--6" src="assets/images/img_ellipse_77x77.png" alt="">
+      <!-- Большой круг -->
+      <div class="testimonials__photo-container">
+        <img src="assets/images/Ellipse5.png" alt="">
+        <!-- Кавычки под фото -->
+        <img class="testimonials__quote" src="assets/images/img_.svg" alt="">
+      </div>
+    </div>
+    <div class="testimonials__bottom">
+      <!-- Левая стрелка -->
+      <button class="testimonials__arrow testimonials__arrow--left">
+        <img src="assets/images/img_arrow_left.svg" alt="">
+      </button>
+      <!-- Текст -->
+      <div class="testimonials__content">
+        <p class="testimonials__text">
+          Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
+        </p>
+        <p class="testimonials__author">
+          <span class="testimonials__author-name">Kerry Johnes</span> – Some Company
+        </p>
+      </div>
+      <!-- Правая стрелка -->
+      <button class="testimonials__arrow testimonials__arrow--right">
+        <img src="assets/images/img_arrow_right.svg" alt="">
+      </button>
+    </div>
+  </section>
+
+<!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2 class="newsletter__title">Subscribe to our newsletter</h2>
+    <p class="newsletter__desc">Cras pulvinar mattis nunc sed blandit.</p>
+    <form class="newsletter__form" autocomplete="off">
+      <input 
+        type="email" 
+        class="newsletter__input" 
+        placeholder="ENTER EMAIL" 
+        required
+        oninvalid="this.setCustomValidity('Введите корректный email')"
+        oninput="this.setCustomValidity('')"
+      >
+      <button type="submit" class="newsletter__btn">
+        SUBSCRIBE
+        <img src="assets/images/img_arrow_right.svg" alt="arrow" class="newsletter__arrow">
+      </button>
+    </form>
+  </section>
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__col footer__col--brand">
+        <div class="footer__logo">Lopper</div>
+        <p class="footer__desc">Eu augue ut lectus arcu bibendum at.</p>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">MENU</div>
+        <ul class="footer__list">
+          <li><a href="index.html" class="footer__link footer__link--hover-underline">Home</a></li>
+          <li><a href="about.html" class="footer__link footer__link--hover-underline">About</a></li>
+          <li><a href="services.html" class="footer__link footer__link--hover-underline">Services</a></li>
+          <li><a href="team.html" class="footer__link footer__link--hover-underline">News</a></li>
+          <li><a href="gallery.html" class="footer__link footer__link--hover-underline">Gallery</a></li>
+          <li><a href="contact.html" class="footer__link footer__link--hover-underline">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">SERVICES</div>
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link footer__link--hover-underline">Lorem</a></li>
+          <li><a href="#" class="footer__link footer__link--hover-underline">Ipsum</a></li>
+          <li><a href="#" class="footer__link footer__link--hover-underline">Dolor</a></li>
+          <li><a href="#" class="footer__link footer__link--hover-underline">Sit Amet</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">CONTACT US</div>
+        <ul class="footer__list">
+          <li>
+            <a href="mailto:contact@lop.com" class="footer__link footer__link--hover-underline">
+              <img src="assets/images/img_vector_gray_50_9x12.svg" alt="" class="footer__icon"> contact@lop.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:856693456" class="footer__link footer__link--hover-underline">
+              <img src="assets/images/img_vector_gray_50_13x9.svg" alt="" class="footer__icon"> 856 - 693 - 456
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">FOLLOW US</div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social"><img src="assets/images/img_vector_gray_50_14x18.svg" alt="Twitter"></a>
+          <a href="#" class="footer__social"><img src="assets/images/img_vector_gray_50_18x18.svg" alt="Facebook"></a>
+          <a href="#" class="footer__social"><img src="assets/images/img_vector.svg" alt="Instagram"></a>
+          <a href="#" class="footer__social"><img src="assets/images/img_vector_gray_50_18x25.svg" alt="YouTube"></a>
+          <a href="#" class="footer__social"><img src="assets/images/img_vector_gray_50.svg" alt="Medium"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      © 2019 Lopper by mariuszdanie. All right reserved.
+    </div>
+  </footer>
+</body>
+</html>

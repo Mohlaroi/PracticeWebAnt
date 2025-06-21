@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rick & Morty Characters</title>
+  <link rel="stylesheet" href="general.css">
+</head>
+<body data-type="character">
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo">
+        <a href="characters.html"><img src="assets/images/logo-black 1.svg" alt="Logo"></a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav nav">
+          <li class="nav__menu-item"><a href="characters.html">Characters</a></li>
+          <li class="nav__menu-item"><a href="locations.html">Locations</a></li>
+          <li class="nav__menu-item"><a href="episodes.html">Episodes</a></li>
+        </ul>
+      </nav>
+      <button class="burger-btn" aria-label="Open">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="header__nav mobile-menu">
+    <ul class="header__nav mobile-menu__items">
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+    </ul>
+  </nav>
+  <main class="main">
+    <img class="main__logo" src="assets/images/PngItem.svg" alt="Rick and Morty" />
+    <section class="filters" data-type="character">
+      <article class="filters__filter-item" id="characters-search">
+        <img src="assets/images/lens.svg" alt="Search Icon" />
+        <input type="text" placeholder="Filter by name..." />
+      </article>
+      <div class="select-wrappers-wrapper">
+        <div class="select-wrapper">
+          <select class="filters__filter-item" data-filter="species">
+            <option value="" disabled selected>Species</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <select class="filters__filter-item" data-filter="gender">
+            <option value="" disabled selected>Gender</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <select class="filters__filter-item" data-filter="status">
+            <option value="" disabled selected>Status</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="characters cards"></section>
+    <button class="loadmore" data-type="character" data-url="https://rickandmortyapi.com/api/character">LOAD MORE</button>
+  </main>
+  <footer class="footer">
+    <span class="footer__text">Make with ❤️ for the MobProgramming team</span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

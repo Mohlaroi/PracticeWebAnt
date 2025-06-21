@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rick & Morty Locations</title>
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="locations.css">
+</head>
+<body data-type="location">
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo">
+        <a href="characters.html"><img src="assets/images/logo-black 1.svg" alt="Logo"></a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav nav">
+          <li class="nav__menu-item"><a href="characters.html">Characters</a></li>
+          <li class="nav__menu-item"><a href="locations.html">Locations</a></li>
+          <li class="nav__menu-item"><a href="episodes.html">Episodes</a></li>
+        </ul>
+      </nav>
+      <button class="burger-btn" aria-label="Open">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="header__nav mobile-menu">
+    <ul class="header__nav mobile-menu__items">
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="locations.html">Locations</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+    </ul>
+  </nav>
+  <main class="main">
+    <img class="main__logo" src="assets/images/locations.svg" alt="Locations" />
+    <section class="filters" data-type="location">
+      <article class="filters__filter-item">
+        <img src="assets/images/lens.svg" alt="Search Icon" />
+        <input type="text" placeholder="Filter by name...">
+      </article>
+      <div class="select-wrappers-wrapper">
+        <div class="select-wrapper">
+          <select class="filters__filter-item" data-filter="type">
+            <option value="" disabled selected>Type</option>
+          </select>
+        </div>
+        <div class="select-wrapper">
+          <select class="filters__filter-item" data-filter="dimension">
+            <option value="" disabled selected>Dimension</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="locations cards"></section>
+    <button class="loadmore" data-type="location" data-url="https://rickandmortyapi.com/api/location">LOAD MORE</button>
+  </main>
+  <footer class="footer">
+    <p>Make with ❤️ for the MobProgramming team</p>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

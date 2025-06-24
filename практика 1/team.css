@@ -1,0 +1,118 @@
+.default::before {
+    background: url('assets/images/Photo-3.png') center/cover no-repeat !important;
+}
+
+.intro__section {
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+.intro__section p {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.team__section {
+    background-color: rgba(21, 4, 51, 1);
+    margin: 0 -100px;
+    padding: 0 25% 25% 25%;
+}
+
+.team__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.team__item {
+    flex: 0 0 calc(33.333% - 27px);
+    max-width: calc(33.333% - 27px);
+}
+.quote__img{
+    top: 230px !important;
+}
+.main__img {
+    display: block;
+    width: 400px !important;
+    height: 400px !important;
+}
+
+.teammates__container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+    justify-content: center;
+}
+
+.teammate__card {
+    margin-top: -7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.teammate__card h4,
+.teammate__card span {
+    font-weight: 800;
+}
+
+.teammate__card span {
+    font-weight: 700;
+    opacity: 0.3;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.teammate__icons {
+    margin-top: 0.5rem;
+    display: flex;
+    width: 90%;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.teammate__card img {
+    max-width: 262px;
+    max-height: 262px;
+    object-fit: cover;
+}
+
+.mainimage__space {
+    margin-top: -150px;
+}
+
+#quote {
+    position: absolute;
+    left: 40%;
+    top: 280px !important;
+    height: auto;
+    z-index: 2;
+}
+
+.testimonials__info {
+    margin-top: -100px !important;
+}
+
+.menu__desktop a,
+.menu__mobile a,
+.footer__nav a {
+    transition: color 0.3s ease;
+}
+
+.menu__desktop a:hover,
+.menu__mobile a:hover,
+.footer__nav a:hover,
+.footer__nav a:focus {
+    color: #ff3576;
+    text-decoration: underline;
+}
+
+.btn__simple:hover {
+    background-color: #ff3576;
+    color: white;
+}

@@ -1,0 +1,154 @@
+.default::before {
+    background: none !important;
+}
+
+.default::after {
+    background: none !important;
+}
+
+.default {
+    min-height: 0 !important;
+}
+
+.default .headline__tag {
+    color: rgba(48, 35, 61, 1) !important;
+}
+
+.gallery__section {
+    margin: 0 -100px -9rem;
+}
+
+.gallery__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gallery__image {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    color: white;
+    gap: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery__image:hover {
+    transform: scale(1.05);
+}
+
+.gallery__image h5 {
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.gallery__image span {
+    font-weight: 400;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.purple::before,
+.turquoise::before,
+.pink::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    transition: background-color 0.3s ease;
+}
+
+.purple::before {
+    background-color: rgba(94, 35, 157, 1);
+}
+
+.turquoise::before {
+    background-color: rgba(0, 240, 181, 1);
+}
+
+.pink::before {
+    background-color: rgba(246, 16, 103, 1);
+}
+
+.purple,
+.pink {
+    z-index: 1;
+    height: 774px;
+}
+
+.turquoise {
+    z-index: 2;
+    height: 828px;
+}
+
+/* Фоны для каждого изображения */
+#first_image {
+    grid-row: 1;
+    grid-column: 1;
+    background-image: url('assets/images/Laptop.png');
+    transform: translateY(3.5rem);
+}
+
+#second_image {
+    grid-row: 1;
+    grid-column: 2;
+    background-image: url('assets/images/logos.png');
+    transform: translateY(3.5rem);
+}
+
+#third_image {
+    grid-row: 2;
+    grid-column: 1 / 3;
+    background-image: url('assets/images/Log.png');
+}
+
+#fourth_image {
+    grid-row: 3;
+    grid-column: 1;
+    background-image: url('assets/images/Fields.png');
+    transform: translateY(-6.9rem);
+}
+
+#fifth_image {
+    grid-row: 3;
+    grid-column: 2;
+    background-image: url('assets/images/Rocks.png');
+    transform: translateY(-3.5rem);
+}
+
+/* Testimonials */
+
+#Testimonials {
+    padding: 15rem 0 !important;
+}
+
+
+
+.menu__desktop a,
+.menu__mobile a,
+.footer__nav a {
+    transition: color 0.3s ease;
+}
+
+.menu__desktop a:hover,
+.menu__mobile a:hover,
+.footer__nav a:hover,
+.footer__nav a:focus {
+    color: #ff3576;
+    text-decoration: underline;
+}
+
+.btn__simple:hover {
+    background-color: #ff3576;
+    color: white;
+}

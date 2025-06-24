@@ -1,0 +1,136 @@
+.default::before {
+    background: url('assets/images/header.png') center/cover no-repeat !important;
+}
+
+/* Services and Text-img */
+
+.services__section,
+.text-img__section {
+    margin-top: 150px;
+}
+
+.section__caption {
+    margin-bottom: 0 !important;
+}
+
+.services__header,
+.text-img__header {
+    text-align: center;
+}
+
+.directions__container {
+    padding: 0 10%;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.turquoise p {
+    color: rgba(0, 240, 181, 1);
+}
+
+.orange p {
+    color: rgba(246, 113, 16, 1);
+}
+
+.pink p {
+    color: rgba(246, 16, 103, 1);
+}
+
+/* Text-img */
+
+.text-img__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.text-img__block {
+    display: flex;
+    align-items: center;
+    height: 33%;
+    gap: 3rem;
+}
+
+.text-img__block > div {
+    width: 80%;
+    height: 100%;
+}
+
+.text-img__block img {
+    width: 80%;
+    height: 100%;
+}
+
+.right-img {
+    margin-right: -100px;
+}
+
+.left-img {
+    margin-left: -100px;
+}
+
+.text-img__block p {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.text-img__block q {
+    quotes: none;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(119, 108, 130, 1);
+}
+
+/* Testimonials */
+
+#Testimonials {
+    padding: 0 0 150px 0 !important;
+}
+
+.mainimage__space {
+    margin-top: -130px;
+}
+
+.main__img {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.quote__img {
+    position: absolute;
+    left: 40%;
+    top: 280px !important;
+    height: auto;
+    z-index: 2;
+}
+
+.testimonials__info {
+    margin-top: -100px !important;
+}
+#Testimonials{
+    margin-top: 300px !important;
+}
+
+
+.menu__desktop a,
+.menu__mobile a,
+.footer__nav a {
+    transition: color 0.3s ease;
+}
+
+.menu__desktop a:hover,
+.menu__mobile a:hover,
+.footer__nav a:hover,
+.footer__nav a:focus {
+    color: #ff3576;
+    text-decoration: underline;
+}
+
+.btn__simple:hover {
+    background-color: #ff3576;
+    color: white;
+}
